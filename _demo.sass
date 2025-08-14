@@ -1,7 +1,43 @@
 #demo
     .box
-        position: relative
         .minibox
             width: 100px
             height: 100px
-            border: 1px solid red
+            border: 1px solid #8f92b9
+            transition: 2s
+            h1
+                color: #0011ff
+            &:hover
+                width: 200px
+                height: 60px
+                border: 5px solid #0011ff
+                transition: 2s
+                h1
+                    color: #040b31
+        @media screen and ( max-width: 600px )
+            .minibox
+                width: 70px
+                height: 70px
+                border: 1px solid #656574
+                h1
+                    font-size: 12px
+                    color: #a50000
+                    transition: 2s
+                &:hover
+                    width: 100px
+                    height: 40px
+                    transition: 2s
+        @media screen and ( max-width: 400px )
+            .minibox
+                width: 50px
+                height: 50px
+                border: 5px solid #14aa00
+                background-color: #008cff
+                h1
+                    font-size: 8px
+                    color: #ffff
+                    transition: 2s
+                &:hover
+                    width: 60px
+                    height: 25px
+                    transition: 2s
